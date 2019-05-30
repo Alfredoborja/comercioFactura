@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @*<link href="~/Content/Site.css" rel="stylesheet" type="text/css" />*@
+    @*<link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/jquery-3.0.0.min.js"></script>*@
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script type=”text/javascript” src=”js/stacktable.js”></script>
+
+</head>
+<body>
+    <div class="navbar navbar-default navbar-fixed-top" >
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://kasai-web:82"><img src="~/Imagenes/logo100-72pppTRANS.png" height="20" width="100"/></a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Produccion", "Produccion", "Home")</li>
+                    <li>@Html.ActionLink("Ctrl. Prod", "Prod", "Home")</li>
+                    <li>@Html.ActionLink("Compras", "Compras", "Home")</li>
+                    <li>@Html.ActionLink("Sistemas", "Sistemas", "Home")</li>
+                    <li>@Html.ActionLink("Finanzas", "Finanzas", "Home")</li>
+                </ul>  
+            </div>
+        </div>
+    </div>
+   
+    <div class="container">
+
+        <div>
+            
+            @RenderBody()
+        </div>
+
+        
+        <footer>
+                
+            <p>&copy; @DateTime.Now.Year - Kasai Mexicana - Departamento de Sistemas de Información</p>
+
+        </footer>
+
+    </div>
+
+
+    @*<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>*@
+</body>
+</html>

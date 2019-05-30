@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 22.125" name="clientDynDB">
+  <DataContextMoniker Name="/clientDynDBDataContext" />
+  <nestedChildShapes>
+    <classShape Id="a8bd7162-c3cb-4f0a-b620-0d385356303b" absoluteBounds="3.25, 1.25, 2, 20.616437174479167">
+      <DataClassMoniker Name="/clientDynDBDataContext/RM00101" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6a74ade1-0890-450e-9fc8-f4bab455e979" absoluteBounds="3.265, 1.71, 1.9700000000000002, 20.056437174479164" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

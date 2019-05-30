@@ -1,0 +1,325 @@
+﻿@model IEnumerable<MVC.Models.clientes>
+@using PagedList.Mvc;
+@using MVC.Models;
+
+@{
+    ViewBag.Title = "crearF";
+    Layout = "~/Views/Shared/_Layout.cshtml"; 
+}   
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <script src="~/Scripts/facturasEx.js"></script>
+    <style type="text/css">
+        h3 {
+            font-family: serif;
+            font-size: 40pt;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="panel-group">
+
+        <br />
+        <br />
+        <br />
+        <div><label>Facturacion 3.3 Comercio Exterior</label></div>
+        <div class="panel panel-primary">
+            <div class="panel-heading" style="font-family:sans-serif; font-size:18pt;">Datos generales</div>
+            <div class="panel-body">
+                <div class="text-center text-primary ">
+
+                </div>
+               
+
+                <div class="modal fade" id="myModal" role="dialog" >
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Selecciona cliente</h4>
+                            </div>
+                            @*@using (Html.BeginForm("listaC", "FacturasEx", FormMethod.Get))
+                            {*@ 
+                            <div class="modal-body">
+                                <label>Cliente</label>
+                                @Html.TextBox("buscarCliente", ViewBag.id_cliente as string, new {@class="form-control" })
+                                <input type="submit" name="" value="Buscar" class="btn btn-primary" onfocusout="cargarClientes()" onclick="" />
+                            </div>
+                            @*}*@
+                            
+
+                            <div class="col-md-12">
+                                <table id="tbl1" class="table table-bordered table-responsive"  >
+                                    <tr>
+                                        <th>
+                                          @*@Html.ActionLink("ID", "listaC","FacturasEX",null, new { })*@  
+                                          ID
+                                        </th>
+                                        <th>
+                                            Cliente
+                                        </th>
+                                        <th>
+                                            Calle
+                                        </th>
+                                        <th>
+                                            CP
+                                        </th>
+                                        <th>
+                                            Colonia
+                                        </th>
+                                        <th>
+                                            Pais
+                                        </th>
+                                        <th>
+                                            Moneda
+                                        </th>
+                                    </tr>
+                                    @try { 
+                                          foreach (var item in Model)
+                                     {
+                                        <tr>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.ID) 
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.cliente)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.calle)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.cp)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.colonia)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.pais)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.moneda)
+                                            </td>
+                                        </tr>
+                                     }
+                                    } 
+                                    catch(Exception ex){
+                                         
+                                    }
+                                   
+                                </table>
+                                @*Pagina @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) de @Model.PageCount
+                                @Html.PagedListPager(Model, page => Url.Action("ListarClientes"))*@
+                            </div>
+                            <div class="modal-footer">
+                                @*<input type="button" value="Seleccionar" class="btn btn-primary" onclick="" />*@
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-1">
+                        <input type="button" data-toggle="modal" data-target="#myModal" id="btnCliente" value="Cliente" class="btn btn-primary" onclick="cargarClientes();" />
+                    </div>
+                    <div class="col-md-2">
+                        <label for="id_cliente">Id cliente</label>
+                        <input type="text" id="id_cliente" class="form-control" />
+                    </div>
+                    <div class="col-md-5">
+                        <label for="cliente">Cliente</label>
+                        <input type="text" id="cliente" class="form-control" />
+                    </div>
+                    <div class="col-md-3">
+                        <label for="tax_id">Tax id</label>
+                        <input type="text" id="tax_id" class="form-control" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="dir">Direccion</label>
+                        <input type="text" id="dir" class="form-control" />
+                    </div>
+                    <div class="col-md-3">
+                        <label for="pais">País</label>
+                        <input type="text" id="pais" class="form-control" />
+                    </div>
+                    <div class="col-md-3">
+                        <label for="estado">Estado</label>
+                        <input type="text" id="estado" class="form-control" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <label for="cp">CP</label>
+                        <input type="text" id="cp" class="form-control" />
+                    </div>
+                    <div class="col-md-3">
+                        <label for="incoterm">Incoterm</label>
+                        <input type="text" id="incoterm" class="form-control" />@*Queda pendiente un dropdownlist*@
+                    </div>
+                    <div class="col-md-3">
+                        <label for="moneda">Moneda</label>
+                        <input type="text" id="moneda" class="form-control" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <label for="t_cambio">Tipo de cambio</label>
+                        <input type="text" id="t_cambio" class="form-control" />
+                    </div>
+                    <div class="col-md-3">
+                        <label for="v_embarque">Via de embarque</label>
+                        <input type="text" id="v_embarque" class="form-control" />@*Queda pendiente un dropdownlist*@
+                    </div>
+                    <div class="col-md-3">
+                        <label for="descuento">Descuento</label>
+                        <input type="text" id="descuento" class="form-control" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 ">
+                        <label for="no_pedimento">No. de pedimento</label>
+                        <input type="text" id="no_pedimento" class="form-control" />
+                    </div>
+                    <div class="col-md-4 ">
+                        <br />
+                        <label for="complemento_op">Opciones:</label>
+                        <div class="radio-inline">
+                            <label><input type="radio" name="tipoComplemento" checked />Complemento</label>
+                        </div>
+                        <div class="radio-inline">
+                            <label><input type="radio" name="tipoComplemento" />Pedimente</label>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="panel panel-default">
+            <div class="panel-heading"></div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <div class="row">
+                            <div class="col-md-1">
+                                <input type="button" id="btnadd" value="Añadir" class="btn btn-primary" />
+                            </div>
+                            <div class="col-md-1">
+                                <input type="button" id="btnRemove" value="Eliminar" class="btn btn-primary" />
+                            </div>
+                            <div class="col-md-1">
+                                <input type="button" id="btnRemoveAll" value="Eliminar todo" class="btn btn-primary" />
+                            </div>
+                        </div>
+                        <br>
+
+                        <div class="">
+                            <div class="panel-body">
+                                <table id="tbl" class="table table-bordered table-responsive" border="1">
+                                    <tr>
+                                        <th scope="col">Partida</th>
+                                        <th scope="col">Numero PT</th>
+                                        <th scope="col">Descripcion PT</th>
+                                        <th scope="col">Clave Ped</th>
+                                        <th scope="col">Clave Unidad</th>
+                                        <th scope="col">Fraccion Arancelaria</th>
+                                        <th scope="col">Cantidad Aduana</th>
+                                        <th scope="col">Unidad Aduana</th>
+                                        <th scope="col">Valor unitario</th>
+                                        <th scope="col">Valor dolares</th>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <script>
+                            var tabla = document.getElementById('tbl');
+
+                            $(document).ready(function () {
+                                var i = 0;
+                                $("#btnRemove").attr('disabled', 'disabled')
+
+                                $("#btnadd").click(function () {
+                                    //var btn = document.createElement("BUTTON");
+                                    //$(tabla).append("<input type=input  />")
+
+                                    i = i + 1
+                                    var fila = '<tr id=fila' + i + '> \n\
+                                    <th scope=row><label for=partida />'+ i + '</label></th>\n\
+                                    <td ><input type=input class=form-control name=pt  /></td>\n\
+                                    <td ><input type=input class=form-control name=desc /></td>\n\
+                                    <td><input type=input class=form-control name=clave_Ped /></td>\n\
+                                    <td><input type=input class=form-control name=clave_unidad /></td>\n\
+                                    <td><input type=input class=form-control name=fraccion /></td>\n\
+                                    <td><input type=input class=form-control name=cantidad_aduana /></td>\n\
+                                    <td><input type=input class=form-control name=unidad_aduana /></td>\n\
+                                    <td><input type=input class=form-control name=valor_unitario /></td>\n\
+                                    <td><input type=input class=form-control name=valor_dolares/></td>\n\
+                                    </tr>'
+                                    $('#tbl').append(fila)
+                                    $("#btnRemove").removeAttr('disabled');
+                                })
+
+                                $("#btnRemove").click(function () {
+                                    if (i != 0) {
+                                        $('#fila' + i).remove()
+                                        i = i - 1
+                                    }
+                                    if (i == 0) {
+
+                                        $("#btnRemove").attr('disabled', 'disabled')
+
+                                    }
+                                })
+
+
+                            })
+
+                            //$(document).ready(function() {
+                            //    $('#tbl').stacktable();
+                            //});
+                        </script>
+                    </div>
+                </div>
+
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label for="notas">Notas adicionales</label>
+                            <textarea class="form-control" id="notas" rows="3"></textarea>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="m_descuento">Motivo de descuento</label>
+                            <textarea class="form-control" id="m_descuento" rows="3"></textarea>
+                            <br />
+                            <br />
+                        </div>
+                        <div>
+                            <input type="button" value="Enviar" class="btn btn-primary" />
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+</body>
+</html>
+  
+
+
+

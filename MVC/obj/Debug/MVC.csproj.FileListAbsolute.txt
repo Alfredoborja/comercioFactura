@@ -1,0 +1,68 @@
+c:\users\aborja\documents\visual studio 2013\Projects\MVC\MVC\bin\MVC.dll.config
+c:\users\aborja\documents\visual studio 2013\Projects\MVC\MVC\bin\MVC.dll
+c:\users\aborja\documents\visual studio 2013\Projects\MVC\MVC\bin\MVC.pdb
+c:\users\aborja\documents\visual studio 2013\Projects\MVC\MVC\bin\System.Web.Helpers.dll
+c:\users\aborja\documents\visual studio 2013\Projects\MVC\MVC\bin\System.Web.Mvc.dll
+c:\users\aborja\documents\visual studio 2013\Projects\MVC\MVC\bin\System.Web.Razor.dll
+c:\users\aborja\documents\visual studio 2013\Projects\MVC\MVC\bin\System.Web.Webpages.Deployment.dll
+c:\users\aborja\documents\visual studio 2013\Projects\MVC\MVC\bin\System.Web.Webpages.dll
+c:\users\aborja\documents\visual studio 2013\Projects\MVC\MVC\bin\System.Web.Webpages.Razor.dll
+c:\users\aborja\documents\visual studio 2013\Projects\MVC\MVC\bin\System.Web.Razor.xml
+c:\users\aborja\documents\visual studio 2013\Projects\MVC\MVC\bin\System.Web.Webpages.xml
+c:\users\aborja\documents\visual studio 2013\Projects\MVC\MVC\bin\System.Web.Webpages.Deployment.xml
+c:\users\aborja\documents\visual studio 2013\Projects\MVC\MVC\bin\System.Web.Webpages.Razor.xml
+c:\users\aborja\documents\visual studio 2013\Projects\MVC\MVC\bin\System.Web.Helpers.xml
+c:\users\aborja\documents\visual studio 2013\Projects\MVC\MVC\bin\System.Web.Mvc.xml
+c:\users\aborja\documents\visual studio 2013\Projects\MVC\MVC\bin\es\System.Web.Razor.resources.dll
+c:\users\aborja\documents\visual studio 2013\Projects\MVC\MVC\bin\es\System.Web.Webpages.resources.dll
+c:\users\aborja\documents\visual studio 2013\Projects\MVC\MVC\bin\es\System.Web.Webpages.Deployment.resources.dll
+c:\users\aborja\documents\visual studio 2013\Projects\MVC\MVC\bin\es\System.Web.Webpages.Razor.resources.dll
+c:\users\aborja\documents\visual studio 2013\Projects\MVC\MVC\bin\es\System.Web.Helpers.resources.dll
+c:\users\aborja\documents\visual studio 2013\Projects\MVC\MVC\bin\es\System.Web.Mvc.resources.dll
+c:\users\aborja\documents\visual studio 2013\Projects\MVC\MVC\obj\Debug\MVC.dll
+c:\users\aborja\documents\visual studio 2013\Projects\MVC\MVC\obj\Debug\MVC.pdb
+c:\users\aborja\documents\visual studio 2013\Projects\MVC\MVC\bin\Antlr3.Runtime.dll
+c:\users\aborja\documents\visual studio 2013\Projects\MVC\MVC\bin\Microsoft.Web.Infrastructure.dll
+c:\users\aborja\documents\visual studio 2013\Projects\MVC\MVC\bin\Newtonsoft.Json.dll
+c:\users\aborja\documents\visual studio 2013\Projects\MVC\MVC\bin\System.Web.Optimization.dll
+c:\users\aborja\documents\visual studio 2013\Projects\MVC\MVC\bin\WebGrease.dll
+c:\users\aborja\documents\visual studio 2013\Projects\MVC\MVC\bin\Antlr3.Runtime.pdb
+c:\users\aborja\documents\visual studio 2013\Projects\MVC\MVC\bin\Newtonsoft.Json.xml
+c:\users\aborja\documents\visual studio 2013\Projects\MVC\MVC\bin\System.Web.Optimization.xml
+C:\Users\Alfredo\Documents\Visual Studio 2015\Projects\Factura comercio\MVC\bin\MVC.dll.config
+C:\Users\Alfredo\Documents\Visual Studio 2015\Projects\Factura comercio\MVC\bin\MVC.dll
+C:\Users\Alfredo\Documents\Visual Studio 2015\Projects\Factura comercio\MVC\bin\MVC.pdb
+C:\Users\Alfredo\Documents\Visual Studio 2015\Projects\Factura comercio\MVC\bin\Antlr3.Runtime.dll
+C:\Users\Alfredo\Documents\Visual Studio 2015\Projects\Factura comercio\MVC\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Alfredo\Documents\Visual Studio 2015\Projects\Factura comercio\MVC\bin\Newtonsoft.Json.dll
+C:\Users\Alfredo\Documents\Visual Studio 2015\Projects\Factura comercio\MVC\bin\System.Web.Helpers.dll
+C:\Users\Alfredo\Documents\Visual Studio 2015\Projects\Factura comercio\MVC\bin\System.Web.Mvc.dll
+C:\Users\Alfredo\Documents\Visual Studio 2015\Projects\Factura comercio\MVC\bin\System.Web.Optimization.dll
+C:\Users\Alfredo\Documents\Visual Studio 2015\Projects\Factura comercio\MVC\bin\System.Web.Razor.dll
+C:\Users\Alfredo\Documents\Visual Studio 2015\Projects\Factura comercio\MVC\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Alfredo\Documents\Visual Studio 2015\Projects\Factura comercio\MVC\bin\System.Web.Webpages.dll
+C:\Users\Alfredo\Documents\Visual Studio 2015\Projects\Factura comercio\MVC\bin\System.Web.Webpages.Razor.dll
+C:\Users\Alfredo\Documents\Visual Studio 2015\Projects\Factura comercio\MVC\bin\WebGrease.dll
+C:\Users\Alfredo\Documents\Visual Studio 2015\Projects\Factura comercio\MVC\bin\Antlr3.Runtime.pdb
+C:\Users\Alfredo\Documents\Visual Studio 2015\Projects\Factura comercio\MVC\bin\Newtonsoft.Json.xml
+C:\Users\Alfredo\Documents\Visual Studio 2015\Projects\Factura comercio\MVC\bin\System.Web.Optimization.xml
+C:\Users\Alfredo\Documents\Visual Studio 2015\Projects\Factura comercio\MVC\bin\System.Web.Razor.xml
+C:\Users\Alfredo\Documents\Visual Studio 2015\Projects\Factura comercio\MVC\bin\System.Web.Webpages.xml
+C:\Users\Alfredo\Documents\Visual Studio 2015\Projects\Factura comercio\MVC\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Alfredo\Documents\Visual Studio 2015\Projects\Factura comercio\MVC\bin\System.Web.Webpages.Razor.xml
+C:\Users\Alfredo\Documents\Visual Studio 2015\Projects\Factura comercio\MVC\bin\System.Web.Helpers.xml
+C:\Users\Alfredo\Documents\Visual Studio 2015\Projects\Factura comercio\MVC\bin\System.Web.Mvc.xml
+C:\Users\Alfredo\Documents\Visual Studio 2015\Projects\Factura comercio\MVC\bin\es\System.Web.Razor.resources.dll
+C:\Users\Alfredo\Documents\Visual Studio 2015\Projects\Factura comercio\MVC\bin\es\System.Web.Webpages.resources.dll
+C:\Users\Alfredo\Documents\Visual Studio 2015\Projects\Factura comercio\MVC\bin\es\System.Web.Webpages.Deployment.resources.dll
+C:\Users\Alfredo\Documents\Visual Studio 2015\Projects\Factura comercio\MVC\bin\es\System.Web.Webpages.Razor.resources.dll
+C:\Users\Alfredo\Documents\Visual Studio 2015\Projects\Factura comercio\MVC\bin\es\System.Web.Helpers.resources.dll
+C:\Users\Alfredo\Documents\Visual Studio 2015\Projects\Factura comercio\MVC\bin\es\System.Web.Mvc.resources.dll
+C:\Users\Alfredo\Documents\Visual Studio 2015\Projects\Factura comercio\MVC\obj\Debug\MVC.csprojResolveAssemblyReference.cache
+C:\Users\Alfredo\Documents\Visual Studio 2015\Projects\Factura comercio\MVC\obj\Debug\MVC.dll
+C:\Users\Alfredo\Documents\Visual Studio 2015\Projects\Factura comercio\MVC\obj\Debug\MVC.pdb
+C:\Users\aborja\Documents\Visual Studio 2013\Projects\MVC\MVC\obj\Debug\MVC.csprojResolveAssemblyReference.cache
+C:\Users\aborja\Documents\Visual Studio 2013\Projects\MVC\MVC\bin\PagedList.dll
+C:\Users\aborja\Documents\Visual Studio 2013\Projects\MVC\MVC\bin\PagedList.Mvc.dll
+C:\Users\aborja\Documents\Visual Studio 2013\Projects\MVC\MVC\bin\PagedList.xml
+C:\Users\aborja\Documents\Visual Studio 2013\Projects\MVC\MVC\bin\PagedList.Mvc.xml
